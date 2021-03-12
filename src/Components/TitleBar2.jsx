@@ -13,6 +13,9 @@ const useStyles = makeStyles((theme) => ({
   appbar: {
     width: `calc(100% - ${drawerWidth}px)`,
     marginLeft: drawerWidth,
+  },
+  paper: {
+    backgroundColor: 'steelblue'
   }
 }));
 
@@ -23,13 +26,13 @@ export default function TitleBar2(props) {
   //Return statement for component
   return(
     <div className={classes.root}>
-      <AppBar className={classes.appbar} position='fixed' color='primary'>
+      <AppBar className={classes.appbar} position='fixed' style={{ background: '#2E3B55'}}>
         <Toolbar >
           <Button
             edge="start"
             onClick={() => {history.push('/');}}
           >
-           <Typography variant='h6'>
+           <Typography variant='h6' style={{ color: 'aliceblue' }}>
               Title
             </Typography>
           </Button>

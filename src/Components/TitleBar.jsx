@@ -22,33 +22,33 @@ export default function TitleBar(props) {
   //Return statement for component
   return(
     <div className={classes.root}>
-      <AppBar position='fixed' color='primary'>
+      <AppBar position='fixed' style={{ background: '#2E3B55'}}>
         <Toolbar className={classes.title}>
           <Button
             edge="start"
             onClick={() => {history.push('/dashboard');}}
           >
-           <Typography variant='h6'>
+           <Typography variant='h6' style={{ color: 'aliceblue' }}>
               Dashboard
             </Typography>
           </Button>
           <Button onClick={() => {history.push('/classroom');}}>
-            <Typography variant='h6'>
+            <Typography variant='h6' style={{ color: 'aliceblue' }}>
               Classroom
             </Typography>
           </Button>
           <Button onClick={() => {history.push('/viewcode');}}>
-            <Typography variant='h6'>
+            <Typography variant='h6' style={{ color: 'aliceblue' }}>
               ViewCode
             </Typography>
           </Button>
           <Button onClick={() => {history.push('/settings');}}>
-            <Typography variant='h6'>
+            <Typography variant='h6' style={{ color: 'aliceblue' }}>
               Settings
             </Typography>
           </Button>
           <Button onClick={() => {history.push('/manageAccount');}}>
-            <Typography variant='h6'>
+            <Typography variant='h6' style={{ color: 'aliceblue' }}>
               Manage_Account
             </Typography>
           </Button>

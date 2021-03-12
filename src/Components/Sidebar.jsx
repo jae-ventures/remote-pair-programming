@@ -16,6 +16,7 @@ const useStyles = makeStyles((theme) => ({
   },
   drawerPaper: {
     width: drawerWidth,
+    backgroundColor: '#818E96',
   },
 }));
 
@@ -26,7 +27,7 @@ function SidebarStudent() {
   return(
 <div className={classes.root}>
       {/* Come back and change these all to icons */}
-      <Drawer className={classes.drawer} variabt='permanent' color='primary' classes={{paper: classes.drawerPaper}}>
+      <Drawer className={classes.drawer} variant='permanent' color='primary' classes={{paper: classes.drawerPaper}}>
         <Divider />
         <List>
           <ListItem button onClick={() => {history.push('/dashboard');}} >
